@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		518711922F599FC4009C9A69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 518711912F599FC4009C9A69 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		518711912F599FC4009C9A69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		51ECE15F2F56C0BB008F181B /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		51ECE1562F56C0BB008F181B = {
 			isa = PBXGroup;
 			children = (
+				518711912F599FC4009C9A69 /* .gitignore */,
 				51ECE1612F56C0BB008F181B /* MoodTracker */,
 				51ECE1602F56C0BB008F181B /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518711922F599FC4009C9A69 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
