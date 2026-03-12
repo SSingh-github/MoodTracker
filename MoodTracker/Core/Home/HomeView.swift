@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var selectedMood: Int? = nil
+    @State private var isPresentingLogSheet = false
+    @State private var showStreaks: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -26,6 +28,10 @@ struct HomeView: View {
             }
             .background(Color.theme.background.ignoresSafeArea())
             .navigationBarHidden(true)
+            .sheet(isPresented: $isPresentingLogSheet) {
+                LogMoodSheet(selectedMoodIndex: $selectedMood)
+            }
+            .navigationDestination(isPresented: $showStreaks) { StreaksProgressView() }
         }
     }
 }
@@ -130,7 +136,7 @@ extension HomeView {
 
     private var primaryAction: some View {
         Button {
-            // Log Check-in action
+            isPresentingLogSheet = true
         } label: {
             HStack(spacing: 12) {
                 Image(systemName: "plus.circle.fill")
@@ -153,7 +159,12 @@ extension HomeView {
 
     private var statsRow: some View {
         HStack(spacing: 16) {
-            statCard(title: "5 days", badgeText: "+1%", badgeColor: .green, subtitle: nil)
+            Button {
+                showStreaks = true
+            } label: {
+                statCard(title: "5 days", badgeText: "+1%", badgeColor: .green, subtitle: "Streaks")
+            }
+            .buttonStyle(.plain)
             statCard(title: "42 entries", badgeText: nil, badgeColor: nil, subtitle: "Total")
         }
     }
