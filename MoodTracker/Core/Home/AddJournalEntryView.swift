@@ -115,8 +115,8 @@ struct AddJournalEntryView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        AddJournalEntryView(title: "The morning quiet", bodyText: "It's finally a peaceful morning...", date: Date(), moodTitle: "Feeling Calm")
-    }
-}
+//#Preview {
+//    NavigationStack {
+//        AddJournalEntryView(title: "The morning quiet", bodyText: "It's finally a peaceful morning...", date: Date(), moodTitle: "Feeling Calm")
+//    }
+//}
