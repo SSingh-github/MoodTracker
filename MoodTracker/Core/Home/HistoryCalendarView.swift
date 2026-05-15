@@ -214,8 +214,8 @@ struct HistoryCalendarView: View {
     }
 }
 
-#Preview {
-    ZStack { Color.theme.background.ignoresSafeArea() }
-    HistoryCalendarView()
-        .padding()
-}
+//#Preview {
+//    ZStack { Color.theme.background.ignoresSafeArea() }
+//    HistoryCalendarView()
+//        .padding()
+//}
