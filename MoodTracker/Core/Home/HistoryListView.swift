@@ -100,8 +100,8 @@ struct HistoryListView: View {
     }
 }
 
-#Preview {
-    ZStack { Color.theme.background.ignoresSafeArea() }
-    HistoryListView()
-        .padding()
-}
+//#Preview {
+//    ZStack { Color.theme.background.ignoresSafeArea() }
+//    HistoryListView()
+//        .padding()
+//}
