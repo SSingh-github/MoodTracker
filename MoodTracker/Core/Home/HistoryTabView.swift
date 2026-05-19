@@ -108,6 +108,6 @@ struct HistoryTabView: View {
     }
 }
 
-#Preview {
-    HistoryTabView()
-}
+//#Preview {
+//    HistoryTabView()
+//}
