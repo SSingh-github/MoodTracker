@@ -323,6 +323,6 @@ private struct CircleSegment: Shape {
     }
 }
 
-#Preview {
-    InsightsView()
-}
+//#Preview {
+//    InsightsView()
+//}
