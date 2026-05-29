@@ -186,7 +186,7 @@ struct LogMoodSheet: View {
     }
 }
 
-#Preview {
-    ZStack { Color.black.ignoresSafeArea() }
-    LogMoodSheet(selectedMoodIndex: .constant(3))
-}
+//#Preview {
+//    ZStack { Color.black.ignoresSafeArea() }
+//    LogMoodSheet(selectedMoodIndex: .constant(3))
+//}
