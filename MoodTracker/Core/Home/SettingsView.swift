@@ -196,7 +196,7 @@ struct SettingsView: View {
     }
 }
 
-#Preview {
-    ZStack { Color.theme.background.ignoresSafeArea() }
-    SettingsView()
-}
+//#Preview {
+//    ZStack { Color.theme.background.ignoresSafeArea() }
+//    SettingsView()
+//}
