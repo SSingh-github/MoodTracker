@@ -247,8 +247,8 @@ struct Milestone: Identifiable, Hashable {
     let color: Color
 }
 
-#Preview {
-    NavigationStack {
-        StreaksProgressView()
-    }
-}
+//#Preview {
+//    NavigationStack {
+//        StreaksProgressView()
+//    }
+//}
